@@ -1,0 +1,95 @@
+const resumejson=require('./resume.json');  //json file assigned to an object
+
+for(var i in resumejson)                    //for in loop
+  {
+    
+    if(i==="educationalqualification")
+      {
+        console.log(i+" : ");
+        var eq=resumejson.educationalqualification;
+      
+       for(var j =0;j<eq.length;j++)       //for loop
+          {
+            let qual=eq[j];
+            for(var k in qual)
+              if(k==="degree")
+                {
+                  console.log("  "+k+" = " + qual[k]);
+                }
+                else{
+              console.log("        "+k+" = " + qual[k]);
+                }
+          }
+      }
+      else if(i==="experience")
+        {
+          console.log(i+" : ");
+          var exp=resumejson.experience;
+       
+            
+            for(var l in exp)
+              {
+                console.log("  "+l+" = " + exp[l]);
+              }
+          
+        }
+        else if(i==="skills")
+          {
+            console.log(i+" : ");
+            
+         
+              for(var m of resumejson.skills)         //for of loop
+                {
+                  console.log("  * "+m);
+                }
+  
+          }
+          else if(i==="languagesknown")
+            {
+              console.log(i+" : ");
+              
+              resumejson.languagesknown.forEach((element) => {        //forEach loop
+                console.log("      "+element.toUpperCase());
+            });
+                   
+            }
+      else{
+        console.log(i+" : "+resumejson[i]);
+
+      }
+ }
+  
+OUTPUT:
+*******
+
+name : Pavithra Balakrishnan
+email : b.pavithra444@gmail.com
+phone : 9750954424
+address : 481,Chinna Thottam,Pollachi Road,Palladam-641664
+summary : A person with passion for producing software solutions to various work environments.
+educationalqualification :
+  degree = M.Sc (CS)
+        institution = St.Joseph's College For Women,Tiruppur
+        startDate = 2014-06-01
+        endDate = 2016-03-30
+        Grade = A
+  degree = BCA
+        institution = St.Joseph's College For Women,Tiruppur
+        startDate = 2011-06-01
+        endDate = 2014-03-30
+        Grade = A
+experience :
+  position = Software Programmer
+  company = Regent Info Solutions
+  startDate = 2016-04-11
+  endDate = 2018-03-22
+skills :
+  * JavaScript
+  * HTML
+  * CSS
+  * Node.js
+  * SQL
+languagesknown :
+      TAMIL
+      ENGLISH
+

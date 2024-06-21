@@ -1,0 +1,44 @@
+{ 
+  "name": "Pavithra Balakrishnan",
+  "email": "b.pavithra444@gmail.com",
+  "phone": "9750954424",
+  "address": "481,Chinna Thottam,Pollachi Road,Palladam-641664",
+  "summary": "A person with passion for producing software solutions to various work environments.",
+  "educationalqualification": [
+    {
+      "degree": "M.Sc (CS)",
+      "institution": "St.Joseph's College For Women,Tiruppur",
+      "startDate": "2014-06-01",
+      "endDate": "2016-03-30",
+      "Grade": "A"
+    },
+    {
+      "degree": "BCA",
+      "institution": "St.Joseph's College For Women,Tiruppur",
+      "startDate": "2011-06-01",
+      "endDate": "2014-03-30",
+      "Grade": "A"
+    }
+  ],
+  
+  "experience":     {
+      "position": "Software Programmer",
+      "company": "Regent Info Solutions",
+      "startDate": "2016-04-11",
+      "endDate": "2018-03-22"
+      
+    },
+   
+  
+ 
+  "skills": [
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "SQL"
+  ],
+  "languagesknown": [
+    "Tamil","English"
+  ]
+}
